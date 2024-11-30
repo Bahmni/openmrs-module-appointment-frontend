@@ -10,13 +10,14 @@ import {
     faStop,
     faSearch,
     faTimes,
-    faCheckSquare, 
-    faAngleDown
+    faCheckSquare,
+    faAngleDown, faPencilAlt, faTrashAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faSquare } from "@fortawesome/free-regular-svg-icons";
+import {faCaretDown} from "@fortawesome/free-solid-svg-icons/faCaretDown";
 
-library.add(faPrint, faPlus, faMinus, faStop, faSearch, faTimes, faCheckSquare, faSquare, faAngleDown);
+library.add(faPrint, faPlus, faMinus, faStop, faSearch, faTimes, faCheckSquare, faSquare, faAngleDown, faPencilAlt, faTrashAlt, faCaretDown);
 
 dom.watch();
 configure(

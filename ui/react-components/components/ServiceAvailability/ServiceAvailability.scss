@@ -1,0 +1,136 @@
+ul {
+  min-height: 350px;
+  border-left: 1px solid #95989A;
+}
+
+.service-availability {
+  font-family: OpenSans, Arial, sans-serif, Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 7px 5px;
+  overflow: hidden;
+  width: 99%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 12px;
+
+  .service {
+    display: flex;
+    min-width: 60%;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+
+  label {
+    margin: 0 2px 2px;
+  }
+
+  input {
+    font-family: inherit;
+    padding: 5px 0 5px 10px;
+    margin: 0 2px 2px;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+  }
+
+  input[type="number"] {
+    width: 35px;
+  }
+
+  .button {
+    float: left;
+    cursor: pointer;
+    padding: 2px;
+    background: #fff;
+    border: 1px solid #808080;
+    min-width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 19px;
+    border-radius: 5px;
+    margin: 2px 2px 2px;
+  }
+
+  .fa.fa-check {
+    color: #388E3c;
+  }
+
+  .fa.fa-pencil {
+    color: #1976D2;
+  }
+
+  .fa.fa-times, .fa.fa-trash {
+    color: #BF360C;
+  }
+
+
+  button[disabled] {
+    cursor: not-allowed;
+    border: 1px solid #c3c6c8;
+    opacity: 0.4;
+  }
+
+  button {
+    text-transform: uppercase;
+    outline: none;
+    padding: 5px;
+    background: #FAFAFA;
+    color: #808080;
+    border: 1px solid #95989A;
+    border-radius: 3px;
+    line-height: 1.2em;
+    max-width: 300px;
+    height: 25px;
+    right: 5px;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 12px;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+
+  .buttonContainer {
+    right: 5px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 25px;
+
+    svg {
+      font-size: 12px;
+      padding: 5px;
+      border: 1px solid #95989A;
+      background: #FAFAFA;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      border-radius: 3px;
+      display: inline-block;
+      line-height: 1.2em;
+      cursor: pointer;
+      min-width: 0;
+      max-width: 300px;
+      text-decoration: none;
+      margin-right: 3px;
+    }
+
+    .edit {
+      color: #1976D2;
+    }
+
+    .delete {
+      color: #BF360C;
+    }
+  }
+
+  .active {
+    background-color: #27AE60;
+    border-color: #27AE60;
+    color: white;
+  }
+}
