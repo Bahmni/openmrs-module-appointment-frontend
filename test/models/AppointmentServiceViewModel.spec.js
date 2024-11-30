@@ -4,8 +4,12 @@ describe('AppointmentServiceViewModel', function () {
     var appointmentServiceModel;
     var dateUtil = Bahmni.Common.Util.DateUtil;
     var timeFormat = 'HH:mm:ss';
-    var startDateTime = new Date('1970-01-01T11:30:00.000Z');
-    var endDateTime = new Date('1970-01-01T14:30:00.000Z');
+
+    var startDateTime = new Date();
+    startDateTime.setHours(11, 30, 0);
+
+    var endDateTime = new Date();
+    startDateTime.setHours(14, 30, 0);
 
     var serviceResponse = {
         name: 'Ortho',

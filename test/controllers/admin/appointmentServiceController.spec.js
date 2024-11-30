@@ -176,8 +176,12 @@ describe("AppointmentServiceController", function () {
             var dateUtil = Bahmni.Common.Util.DateUtil;
             var timeFormat = 'HH:mm:ss';
             beforeEach(function () {
-                startDateTime = new Date('1970-01-01T11:30:00.000Z');
-                endDateTime = new Date('1970-01-01T14:30:00.000Z');
+                startDateTime = new Date();
+                startDateTime.setHours(11, 30, 0);
+
+                endDateTime = new Date();
+                startDateTime.setHours(14, 30, 0);
+
                 serviceResponse = {
                     startTime: dateUtil.getDateTimeInSpecifiedFormat(startDateTime, timeFormat),
                     endTime: dateUtil.getDateTimeInSpecifiedFormat(endDateTime, timeFormat),
@@ -234,12 +238,12 @@ describe("AppointmentServiceController", function () {
             scope.service = {
                 name: 'Chemotherapy',
                 description: 'For cancer',
-                startTime: new Date().toString(),
-                endTime: new Date().toString(),
+                startTime: new Date(),
+                endTime: new Date(),
                 initialAppointmentStatus: 'Requested',
                 weeklyAvailability: [{
-                    startTime: new Date().toString(),
-                    endTime: new Date().toString(),
+                    startTime: new Date(),
+                    endTime: new Date(),
                     days: [{name: 'MONDAY', isSelected: true}]
                 }]
             };

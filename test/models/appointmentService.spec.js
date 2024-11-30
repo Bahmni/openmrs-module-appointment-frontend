@@ -54,8 +54,8 @@ describe('AppointmentService', function () {
     });
 
     it('should re arrange all weeklyAvailabilities by day', function () {
-        var startDateTime = new Date().toString();
-        var endDateTime = new Date().toString();
+        var startDateTime = new Date();
+        var endDateTime = new Date();
 
         var days = angular.copy(constDays);
         days[1].isSelected = true;
@@ -80,11 +80,11 @@ describe('AppointmentService', function () {
     });
 
     it('should construct weekly availability by day for multiple availabilities', function () {
-        var startDateTime = new Date().toString();
-        var endDateTime = new Date().toString();
+        var startDateTime = new Date();
+        var endDateTime = new Date();
 
-        var startDateTime2 = new Date("2015-10-01T18:30:00.000Z").toString();
-        var endDateTime2 = new Date("2015-10-01T18:30:00.000Z").toString();
+        var startDateTime2 = new Date("2015-10-01T18:30:00.000Z");
+        var endDateTime2 = new Date("2015-10-01T18:30:00.000Z");
 
         var days1 = angular.copy(constDays);
         days1[1].isSelected = true;
