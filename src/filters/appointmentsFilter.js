@@ -22,10 +22,9 @@ angular.module('bahmni.appointments')
                 if ((appointment.providers == undefined) || _.isEmpty(appointment.providers)) {
                     return _.includes(providerUuids, 'no-provider-uuid');
                 } else {
-                    var found = _.find(appointment.providers, function (p) {
-                        return _.includes(providerUuids, p.uuid);
+                    return _.find(appointment.providers, function (p) {
+                        return _.includes(providerUuids, p.uuid) && p.response !== "CANCELLED";
                     });
-                    return found && found.response !== "CANCELLED";
                 }
             });
         };
