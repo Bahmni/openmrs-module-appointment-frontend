@@ -20,7 +20,7 @@
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "moment-timezone": "0.5.27",
+    "moment-timezone": "0.5.35",
     "prop-types": "^15.7.2",
     "rc-calendar": "^9.15.7",
     "rc-checkbox": "^2.1.8",
